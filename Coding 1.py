@@ -1,14 +1,7 @@
-# 1. Ask the user for their name
 name = input("Enter your name: ")
+age = int(input("Enter your age: ")) # Convert string input to integer
 
-# 2. Ask for their age and convert it to an integer immediately
-age_str = int(input("Enter your age: "))
+# Calculate future age
+future_age = age + 1
 
-# 3. Convert age to Integer
-age = int(age_str)
-# 4. Calculate the age for next year
-next_year_age = age + 1
-
-# 5. Print the final message
-# We convert next_year_age back to a string to join it with the text
-print("Hello, " + name + ". You will be " + str(next_year_age) + " in this year.")
+print(f"Hello, {name}. You will be {future_age} in one year.")
